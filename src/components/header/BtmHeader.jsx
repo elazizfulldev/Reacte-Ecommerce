@@ -19,6 +19,7 @@ export default function BtmHeader() {
     const location = useLocation()
 
     const [categories , setCategories] = useState([])
+    const [isCtegoryOpen , setIscategoryOpen] = useState(false)
 
     useEffect(()=>{
         fetch('https://dummyjson.com/products/categories')
@@ -26,7 +27,7 @@ export default function BtmHeader() {
         .then((data)=> setCategories(data))
     },[])
 
-    console.log(categories)
+    console.log(isCtegoryOpen)
 
 
   return (
@@ -36,14 +37,14 @@ export default function BtmHeader() {
             <nav className="nav">
 
                 <div className="category-nav">
-                    <div className="category-btn">
+                    <div className="category-btn" onClick={()=>{setIscategoryOpen(!isCtegoryOpen)}}>
                         <IoMdMenu />
                         <p>Browse Category</p>
                         <IoMdArrowDropdown />
                     </div>
-                    <div className="category-nav-list">
+                    <div className={`category-nav-list ${isCtegoryOpen ? "active" : "" }`}>
                         {categories.map((category) =>(
-                            <Link to={category.slug}>{category.name}</Link>
+                            <Link to={category.slug} key={category.slug}>{category.name}</Link>
                         ))}
 
                     </div>
@@ -55,7 +56,7 @@ export default function BtmHeader() {
 
                     {NavLinks.map((item)=>(
 
-                        <Link to={item.link} className={location.pathname === item.link ? "active" : ""}> {item.title} </Link>
+                        <Link to={item.link} className={location.pathname === item.link ? "active" : ""} key={item.title}> {item.title} </Link>
 
                     ))}
                     
