@@ -127,6 +127,7 @@
     overflow-y: auto;
     clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
     transition: .4s;
+    z-index: 200;
 
   }
 
