@@ -3,7 +3,7 @@ import { TiStarFullOutline ,TiStarHalfOutline} from "react-icons/ti";
 import { FaCartArrowDown , FaShare , FaHeart} from "react-icons/fa";
 
 
-export default function Product() {
+export default function Product({title,price}) {
   return (
     <div className='product'>
       <div className="img-product">
@@ -11,7 +11,7 @@ export default function Product() {
 
       </div>
       <p className="name-product">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus totam voluptatibus?
+        {title}
 
       </p>
 
@@ -23,7 +23,7 @@ export default function Product() {
       <TiStarHalfOutline />
 
       </div>
-      <p className="price"><span>$ 100.00</span> </p>
+      <p className="price"><span>$ {price}  </span> </p>
       <div className="icons">
         <span><FaCartArrowDown /></span>
         <span><FaHeart /></span>

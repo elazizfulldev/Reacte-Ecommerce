@@ -14,7 +14,7 @@ export default function Heroslider() {
         <div className="hero">
 
             <div className="container">
-                <Swiper loop={true} autoplay={{delay: 2500,disableOnInteraction: false,}} pagination={true} modules={[Pagination, Autoplay]} className="mySwiper">
+                <Swiper loop={true} autoplay={{delay: 3000,disableOnInteraction: false,}} pagination={true} modules={[Pagination, Autoplay]} className="mySwiper">
                     <SwiperSlide>
                         <div className="content">
                             <h4>Introducing the new</h4>
