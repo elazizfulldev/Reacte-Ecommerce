@@ -7,10 +7,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
-
 export default function SlideProduct({title, data}) {
 
-  console.log(data)
+  console.log(data + "this is data")
   return (
     <div className='slide-products slide'>
         <div className="container">
@@ -24,7 +23,7 @@ export default function SlideProduct({title, data}) {
             <Swiper loop={true} autoplay={{delay: 6000,disableOnInteraction: false,}} slidesPerView={5} spaceBetween={20} navigation={true} modules={[Pagination, Navigation, Autoplay]} className="mySwiper">
 
               {data.map((res)=>(
-                <SwiperSlide><Product title={res.title} price = {res.price}/></SwiperSlide>
+                <SwiperSlide><Product item = {res}/></SwiperSlide>
 
               ))}
                 

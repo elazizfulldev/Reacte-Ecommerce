@@ -52,7 +52,7 @@ export default function Home() {
           categories.map((category)=>(
 
           
-            <SlideProduct key={category} data={products[category]} title={category} />
+            <SlideProduct key={category} data={products[category]} title={category.replace("-"," ")} />
           
            
 
