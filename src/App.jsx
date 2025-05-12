@@ -1,9 +1,12 @@
+import { Route, Routes} from "react-router-dom"
 import BtmHeader from "./components/header/BtmHeader"
 import TopHeader from "./components/header/TopHeader"
 import Home from "./pages/home/Home"
+import ProductDetails from "./pages/home/ProductDetails"
 
 
 function App() {
+
 
 
   return (
@@ -13,7 +16,12 @@ function App() {
      <BtmHeader />
     </header>
 
-    <Home/>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/products/:id" element={<ProductDetails/>}/>
+    </Routes>
+
+    
       
     </>
 

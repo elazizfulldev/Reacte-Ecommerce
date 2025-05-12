@@ -1,12 +1,15 @@
 import React from 'react'
 import { TiStarFullOutline ,TiStarHalfOutline} from "react-icons/ti";
 import { FaCartArrowDown , FaShare , FaHeart} from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
 export default function Product({item}) {
   console.log(item)
   return (
     <div className='product'>
+      
+      <Link to={`products/${item.id}`}>
       <div className="img-product">
         <img src={item.images[0]} alt="" />
 
@@ -15,6 +18,7 @@ export default function Product({item}) {
         {item.title}
 
       </p>
+      </Link>
 
       <div className="stars">
       <TiStarFullOutline />
