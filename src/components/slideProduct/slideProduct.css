@@ -136,6 +136,11 @@
     transition: .3s;
   }
 
+ .product.in-cart .icons  .to-cart{
+    background-color: var(--main-color);
+    color: #fff;
+  }
+
    .product .icons span:hover{
     background-color: var(--main-color);
     color: #fff;

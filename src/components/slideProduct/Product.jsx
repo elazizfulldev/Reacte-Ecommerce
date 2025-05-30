@@ -8,8 +8,9 @@ import { CartContex } from '../contex/CartContex';
 export default function Product({item}) {
   const {cartItems , addToCart} = useContext(CartContex)
   console.log(cartItems)
+  const isInCart = cartItems.some(i => i.id === item.id);
   return (
-    <div className='product'>
+    <div className={`product ${isInCart ? 'in-cart' : ''}`}>
       
       <Link to={`products/${item.id}`}>
       <div className="img-product">
@@ -32,7 +33,7 @@ export default function Product({item}) {
       </div>
       <p className="price"><span>$ {item.price}  </span> </p>
       <div className="icons">
-        <span onClick={()=> addToCart(item)}><FaCartArrowDown /></span>
+        <span className='to-cart' onClick={()=> addToCart(item)}><FaCartArrowDown /></span>
         <span><FaRegHeart /></span>
         <span><FaShare /></span>
         
