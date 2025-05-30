@@ -31,8 +31,10 @@ function TopHeader() {
 
             </div>
             <div className="icon">
+                <Link to="/cart">
                 <BsCart4 />
                 <span className='count'>{cartItems.length}</span>
+                </Link>
 
             </div>
 
