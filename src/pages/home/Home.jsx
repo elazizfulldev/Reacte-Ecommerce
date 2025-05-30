@@ -48,13 +48,17 @@ export default function Home() {
 
 
 
-        {loading ? (<SlideProductLoading/>) : (
+        {loading ? (
+          categories.map((category)=>(
+          <SlideProductLoading/>
+          ))
+        ) : (
 
           categories.map((category)=>(
 
           
-            // <SlideProduct key={category} data={products[category]} title={category.replace("-"," ")} />
-            <SlideProductLoading/>
+            <SlideProduct key={category} data={products[category]} title={category.replace("-"," ")} />
+            
             
           
            

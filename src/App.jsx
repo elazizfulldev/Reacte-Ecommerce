@@ -12,8 +12,8 @@ function App() {
   return (
     <>
     <header>
-     <TopHeader />
-     <BtmHeader />
+      <TopHeader />
+      <BtmHeader />
     </header>
 
     <Routes>

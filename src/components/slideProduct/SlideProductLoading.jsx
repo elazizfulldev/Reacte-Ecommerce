@@ -22,7 +22,7 @@ export default function SlideProductLoading() {
 
                      <div className="contents">
                             <h5 className="skeleton"></h5>
-                            <span className="skeleton"></span>
+                            <h6 className="skeleton"></h6>
                             <p className="skeleton"></p>
                     </div>
 
@@ -37,7 +37,7 @@ export default function SlideProductLoading() {
 
                      <div className="contents">
                             <h5 className="skeleton"></h5>
-                            <span className="skeleton"></span>
+                            <h6 className="skeleton"></h6>
                             <p className="skeleton"></p>
                     </div>
 
@@ -52,7 +52,7 @@ export default function SlideProductLoading() {
 
                      <div className="contents">
                             <h5 className="skeleton"></h5>
-                            <span className="skeleton"></span>
+                            <h6 className="skeleton"></h6>
                             <p className="skeleton"></p>
                     </div>
 
@@ -67,7 +67,7 @@ export default function SlideProductLoading() {
 
                      <div className="contents">
                             <h5 className="skeleton"></h5>
-                            <span className="skeleton"></span>
+                            <h6 className="skeleton"></h6>
                             <p className="skeleton"></p>
                     </div>
 
@@ -82,7 +82,7 @@ export default function SlideProductLoading() {
 
                      <div className="contents">
                             <h5 className="skeleton"></h5>
-                            <span className="skeleton"></span>
+                            <h6 className="skeleton"></h6>
                             <p className="skeleton"></p>
                     </div>
 

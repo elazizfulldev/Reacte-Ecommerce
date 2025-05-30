@@ -5,6 +5,7 @@ import { FaCartArrowDown , FaShare , FaHeart , FaRegHeart} from "react-icons/fa"
 import './ProductDetails.css'
 import SlideProduct from '../../components/slideProduct/slideProduct';
 import ProductDetailsLOading from './ProductDetailsLOading';
+import SlideProductLoading from '../../components/slideProduct/SlideProductLoading';
 
 export default function ProductDetails() {
 
@@ -117,7 +118,7 @@ export default function ProductDetails() {
         </div>
 
         {loadingRelatedProduct ? (
-            <p>Loading...</p>
+            <SlideProductLoading/>
         ):(
             <SlideProduct key={product.category} title={product.category.replace("-"," ")}  data={relatedProduct.products} />
         )}

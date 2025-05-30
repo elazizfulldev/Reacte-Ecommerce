@@ -8,6 +8,15 @@
   
   }
 
+  header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
   .top-header .container {
     display: flex;
     align-items: center;
@@ -194,7 +203,7 @@
     
   }
   .btm-header .container .nav-links a.active{
-    background-color: #0079ca;
+    background-color: #ad040c ;
   }
 
   

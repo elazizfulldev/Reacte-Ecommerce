@@ -43,7 +43,7 @@
 
   .product { 
     /* width: 250px; */
-    background-color: var(--bg-color);
+    background-color: #fff;
     padding: 25px 15px;
     border: 1px solid var(--border-color);
     transition: .4s;
@@ -187,9 +187,11 @@
 
   }
 
-  .loading-slide .product-loading .product .contents span{
+  .loading-slide .product-loading .product .contents h6{
     width: 50%;
     height: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
   }
 
     .loading-slide .product-loading .product .contents p{
