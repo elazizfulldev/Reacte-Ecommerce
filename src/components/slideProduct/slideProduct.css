@@ -141,6 +141,31 @@
     color: #fff;
   }
 
+  .product .status-cart{
+    
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) ;
+    font-size: 13px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--p-color);
+  }
+
+    .product .status-cart svg{
+      color: rgb(20, 219, 80);
+      font-weight: 600;
+    }
+
+  .product.in-cart .status-cart{
+
+    top: 10px;
+   
+  }
+
    .product .icons span:hover{
     background-color: var(--main-color);
     color: #fff;

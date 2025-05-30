@@ -1,6 +1,6 @@
 import React , { useContext } from 'react'
 import { TiStarFullOutline ,TiStarHalfOutline} from "react-icons/ti";
-import { FaCartArrowDown , FaShare , FaHeart , FaRegHeart} from "react-icons/fa";
+import { FaCartArrowDown , FaShare , FaHeart , FaRegHeart , FaCheck} from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { CartContex } from '../contex/CartContex';
 
@@ -13,6 +13,7 @@ export default function Product({item}) {
     <div className={`product ${isInCart ? 'in-cart' : ''}`}>
       
       <Link to={`products/${item.id}`}>
+      <span className='status-cart'>In Cart <FaCheck /></span>
       <div className="img-product">
         <img src={item.images[0]} alt="" />
 
