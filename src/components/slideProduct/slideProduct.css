@@ -127,14 +127,20 @@
   .product .icons span {
     width: 40px;
     height: 40px;
-    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
     cursor: pointer;
-    border: 1px solid var(--main-color);
+    background-color: #eee;
+    transition: .3s;
   }
+
+   .product .icons span:hover{
+    background-color: var(--main-color);
+    color: #fff;
+
+   }
 
  .loading-slide .top-slide {
 
@@ -199,6 +205,18 @@
       height: 20px;
       border-radius: 5px;
     }
+
+   
+
+   .swiper-button-prev, .swiper-button-next{
+      color: var(--main-color);
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: var(--main-color);
+    }
+
+ 
 
   
 
